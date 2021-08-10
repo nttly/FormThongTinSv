@@ -1,0 +1,86 @@
+<form class="form1">
+<h2> Form Thông Tin Sinh Viên </h2>
+<div class="a" *ngIf="isShowForm">
+<table>
+  <tr>
+    <th>
+      Mã Sv:
+    </th>
+    <th>
+      <input [(ngModel)]="student.maSV" name="ma">
+    </th>
+    <th>
+      Họ Sv:
+    </th>
+    <th>
+      <input [(ngModel)]="student.ho" name="ho">
+    </th>
+    <th>
+      Tên Sv:
+    </th>
+    <th>
+      <input [(ngModel)]="student.ten" name="ten" >
+    </th>
+  </tr>
+  <tr>
+    <th>
+      Mã Khoa:
+    </th>
+    <input [(ngModel)]="student.khoa" name="khoa">
+    <th>
+      Ngày sinh:
+    </th>
+    <th>
+      <input class=" i1" type="date" [(ngModel)]="student.date" name="date">
+    </th>
+    <th>
+      Giới tính:
+    </th>
+    <th>
+      <input type="radio" name="gender" value="Nam"[(ngModel)]="student.gender" >Nam
+      <input type="radio" name="gender" value="Nữ" [(ngModel)]="student.gender">Nữ
+    </th>
+  </tr>
+</table>
+<br/>
+<!--<button (click)="save()" class="button1">Lưu</button>-->
+<button (click)="add()" class="button1">Thêm</button><br/>
+</div>
+<div class="d1">
+<button class="button4" (click)="isShowForm=true" *ngIf="!isShowForm">Thêm</button>
+</div>
+<div class="b">
+<table class="b1" border="1">
+  <thead>
+
+  <tr class="h1">
+    <th >Mã Sv</th>
+    <th>Họ</th>
+    <th>Tên</th>
+    <th>Khoa</th>
+    <th>Ngày sinh</th>
+    <th>Giới tính</th>
+    <th>Sửa</th>
+    <th>Xóa</th>
+  </tr>
+</thead>
+  <tr  *ngFor="let sv of students,let i=index">
+
+    <td>{{sv.maSV}} </td>
+    <td>{{sv.ho}} </td>
+    <td> {{sv.ten}}</td>
+    <td>{{sv.khoa}} </td>
+    <td> {{sv.date}}</td>
+    <td> {{sv.gender}}</td>
+    <td>
+      <button  class="button2" (click)="edit(i);">Sửa</button>
+    </td>
+    <td>
+      <button class="button3" (click)="delete(sv.maSV);" >Xóa</button>
+    </td>
+
+  </tr>
+
+</table>
+</div>
+</form>

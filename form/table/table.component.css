@@ -1,0 +1,84 @@
+form{
+  background-color: rgb(240, 240, 250);
+  width: 1000px;
+
+}
+.d1{
+  margin: 30px;
+
+}
+h2{
+  color: rgba(233, 30, 30, 0.904);
+  text-align: center;
+  font-size: 30px;
+  font-family: sans-serif;
+  margin: 20px;
+
+}
+.a{
+  background-color: rgb(228, 189, 189);
+  font-size: 20px;
+  border-radius: 25px;
+  margin: 50px;
+}
+.b1{
+  border-collapse: collapse;
+}
+td{
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+th{
+  width: 150px;
+  font-size: 20px;
+  text-align: center;
+  font-family: sans-serif;
+}
+.button1{
+  position: relative;
+  float: right;
+  font-size: 20px;
+  background-color: rgb(10, 190, 64);
+  color: white;
+  border-radius: 5px;
+
+}
+.button4{
+  position: relative;
+  float: right;
+  font-size: 20px;
+  background-color: rgb(10, 190, 64);
+  color: white;
+  border-radius: 5px;
+
+}
+.button2{
+  background-color: rgb(40, 153, 218);
+  color: white;
+  border-radius: 5px;
+}
+.button3{
+  background-color: rgb(230, 18, 46);
+  color: white;
+  border-radius: 5px;
+}
+input{
+  border-radius: 10px;
+  height: 25px;
+  font-size: 15px;
+  font-family: sans-serif;
+
+}
+.i1{
+  height: 25px;
+  width: 180px;
+}
+button{
+  width: 60px;
+  font-size: 18px;
+}
+.h1{
+  background-color: rgb(167, 186, 240);
+}
